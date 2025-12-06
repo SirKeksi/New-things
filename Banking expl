@@ -9,4 +9,3 @@ Then we have basic methods here, just what you wanna do on your account. Every f
 
 The last thing is the method "check". It's more of a personal preference to have a function that outputs True or False elswhere instead of building the largest method to ever imagine. It is merely used to being able to setting up
 two different scenarios. You can see those in the method "withdraw". It helps me to accordingly set up an output for the user and a new log entry.
-
