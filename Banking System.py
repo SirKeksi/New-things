@@ -15,11 +15,11 @@ class Account:
         self.owner = owner
         self.balance = float(balance)
 
-        self.logger = logging.getLogger(self.owner) # Hier einen Check machen, ob ein Logger bereits mit dem gleichen Namen existiert
-        self.logger.setLevel(logging.INFO) # Sonst könnten Logs zweimal geschrieben werden
+        self.logger = logging.getLogger(self.owner) 
+        self.logger.setLevel(logging.INFO) 
         self.logger.addHandler(fileHandler)
 
-    def deposit(self, amount): # Müsstest mal fragen, was hier das self macht
+    def deposit(self, amount): 
         self.balance += float(amount)
         self.logger.info(f"{amount} successfully loaded onto {self.owner} geladen")
 
@@ -27,7 +27,7 @@ class Account:
         if self.balance < amount:
             return False
         else:
-            return True # Du kannst stattdessen auch "return self.balance >= amount" machen
+            return True 
     def withdraw(self, amount):
         if not self.check(amount):
             self.logger.warning("Fehlgeschlagene Abhebung")
@@ -42,6 +42,7 @@ class Account:
 
     def test(self):
         return self.balance
+
 
 
 
