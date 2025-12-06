@@ -34,7 +34,7 @@ class Account:
             return "Process not possible"
         else:
             self.balance -= float(amount)
-            self.logger.info(f"{amount} erfolgreich von {self.owner} aus dem Konto genommen")
+            self.logger.info(f"{amount} succesfully deducted from {self.owner}")
             return "Process succesfull"
 
     def __str__(self):
@@ -42,6 +42,7 @@ class Account:
 
     def test(self):
         return self.balance
+
 
 
 
