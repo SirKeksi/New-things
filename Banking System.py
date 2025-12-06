@@ -30,7 +30,7 @@ class Account:
             return True 
     def withdraw(self, amount):
         if not self.check(amount):
-            self.logger.warning("Fehlgeschlagene Abhebung")
+            self.logger.warning("Withdrawing went wrong")
             return "Process not possible"
         else:
             self.balance -= float(amount)
@@ -42,6 +42,7 @@ class Account:
 
     def test(self):
         return self.balance
+
 
 
 
