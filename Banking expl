@@ -1,11 +1,1 @@
-So, I wanna talk about my code "Banking System" here a bit. I was interested in how to write logs in a pseudo professional way. So I began to learn the basics for paths, logging and handlers!
 
-Here, the first step is to create a path to the log. Using Pathlib I am able to easily create a new .txt document if it doesn't exist already.
-
-Next, the handler is being set up. Having already set a path to the log, I can directly use it and link it with the handler. The next is mere formatting.
-
-The big one is the class Account. But it is quite simple. Every account gets a logger that transfers its messages to the handler. The log is written into the class so a process of setting up a new Account is as much automatic as it can be.
-Then we have basic methods here, just what you wanna do on your account. Every finished method also emits a log entry, I mean where else to use the log?
-
-The last thing is the method "check". It's more of a personal preference to have a function that outputs True or False elswhere instead of building the largest method to ever imagine. It is merely used to being able to setting up
-two different scenarios. You can see those in the method "withdraw". It helps me to accordingly set up an output for the user and a new log entry.
