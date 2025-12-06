@@ -21,7 +21,7 @@ class Account:
 
     def deposit(self, amount): 
         self.balance += float(amount)
-        self.logger.info(f"{amount} successfully loaded onto {self.owner} geladen")
+        self.logger.info(f"{amount} successfully loaded onto {self.owner}")
 
     def check(self, amount):
         if self.balance < amount:
@@ -42,6 +42,7 @@ class Account:
 
     def test(self):
         return self.balance
+
 
 
 
