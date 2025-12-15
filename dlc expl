@@ -1,0 +1,6 @@
+So, I made some expansions for the Banking System! At first it only saved the logs in .txt documents. Which is fine but I wanted to learn how to use more professional or more common ways to save files. So I began to learn about JSONs!
+
+The code for the dlc is not that sorted. I just wanted the changes to be seen in an extra file rather than just changing a file completely. The only change in "Banking System" is that the path now leads to a .json file. But what are the additions
+to the banking system and what did I aim for?
+
+First thing is the JsonFormatter class. This class should be at the Banking System but like I said the changes are in an extra file
