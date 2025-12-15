@@ -1,6 +1,6 @@
 from pathlib import Path
 
-Log_dir = Path("x") / "banklog.txt"
+Log_dir = Path("x") / "banklog.json"
 if not Log_dir.exists():
     Log_dir.touch(exist_ok = True)
 
@@ -42,6 +42,7 @@ class Account:
 
     def test(self):
         return self.balance
+
 
 
 
