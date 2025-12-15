@@ -10,4 +10,5 @@ first step is done!
 Next thing: I wanted to extract the informations from the JSON file to do a bit of data analysing and stuff. Basically analyzing which person deposited and withdrawn how much money in a month. So the dictionaries Datap (Data plus) 
 and Datam (Data minus) are to collect it. While coding this sorting step I learned about the difference between JSON and JSONl and the top level element.
 
-Once this was done you can use the data an plot it with matplotlib for example. I did not do it for now, because I already learned enough to call it a day. But of course I am gonna look into it, especially because I enjoy differential calculus
+Once this was done you can use the data an plot it with matplotlib for example. I did not do it for now, because I already learned enough to call it a day. But of course I am gonna look into it, especially because I enjoy differential 
+calculus.
