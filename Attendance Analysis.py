@@ -1,12 +1,12 @@
 from pathlib import Path
 import pandas as pd
 
-Path_basic = Path("C:\\Users\\kevha\\OneDrive\\Dokumente\\Desktop\\CodingStuff")
+Path_basic = Path("x")
 File = Path_basic / "Exam_Score_Prediction.csv"
 
 Reader = pd.read_csv(File)
 
-scores = {"0": [], "10": [], "20": [], "30": [], "40": [], "50": [], "60": [], "70": [], "80": [], "90": []} # Wenn Strings mit int verglichen werden, ist es einfach immer False
+scores = {"0": [], "10": [], "20": [], "30": [], "40": [], "50": [], "60": [], "70": [], "80": [], "90": []}
 grades = Reader["exam_score"].tolist()
 times = Reader["class_attendance"].tolist()
 
@@ -48,7 +48,7 @@ for i in range(len(scores_clean)):
 import matplotlib.pyplot as plt
 
 plt.bar(grade_list, scores_clean)
-plt.xticks(grade_list) # Wenn ich hier nichts angebe, verwendet matplotlib eigene Ticks. So sind die Ticks wie ich es will
+plt.xticks(grade_list) 
 plt.yticks(scores_clean)
 plt.show()
 
@@ -84,14 +84,14 @@ x = [0, 1, 2]
 plt.bar([i-width/2 for i in x], list(Dict_ratings.values()), width = width, color = "orange", label = "High Attendance")
 plt.bar([i+width/2 for i in x], list(Ratings2.values()), width = width, color = "purple", label = "Low Attendance")
 
-plt.xticks(x, list(Ratings2.keys())) # Brauchen wenn dann beides
+plt.xticks(x, list(Ratings2.keys())) 
 plt.legend()
 plt.tight_layout()
 plt.show()
 
 # People with higher attendance and therefore better grades are more likely to be found in a high-rated facility. Whereas people who have a lower attendance and therefore worse grades are more likely to be found in low-rated places
 
-# Just for more: how much does the course affect the sleep? -> Ergebnisse in JSON schreiben weil warum nicht?
+# Just for more: how much does the course affect the sleep? 
 
 Sleep = Reader.groupby("course")["sleep_hours"].mean()
 Sleep.plot(kind = "bar")
