@@ -1,3 +1,5 @@
+# Just a little account "simulation" with logging system
+
 from pathlib import Path
 
 Log_dir = Path("x") / "banklog.json"
@@ -42,6 +44,7 @@ class Account:
 
     def test(self):
         return self.balance
+
 
 
 
