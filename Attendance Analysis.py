@@ -1,3 +1,5 @@
+# How much does the class attendance of students affect their results in exams?
+
 from pathlib import Path
 import pandas as pd
 
@@ -99,3 +101,4 @@ plt.ylim(6.5, None)
 plt.show()
 
 # So we see: there is no severe difference in sleep between the courses
+
